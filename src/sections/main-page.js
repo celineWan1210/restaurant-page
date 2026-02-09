@@ -7,7 +7,7 @@ import coffeeBackground from "../assets/coffee-background.jpg"
 export default function main() {
     // main div
     const mainPageDiv = document.createElement("div");
-    mainPageDiv.classList.add("main-page");
+    mainPageDiv.classList.add("main-page-div");
 
     // title
     const titlePara = document.createElement("div");
