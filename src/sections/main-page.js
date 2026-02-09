@@ -7,11 +7,14 @@ import coffeeBackground from "../assets/coffee-background.jpg"
 export default function main() {
     // main div
     const mainPageDiv = document.createElement("div");
+    mainPageDiv.classList.add("main-page");
 
     // title
-    const titlePara = document.createElement("p");
-    const node = document.createTextNode("Moonleaf Cafe");
-    titlePara.appendChild(node);
+    const titlePara = document.createElement("div");
+    titlePara.classList.add("title")
+    const titleParaSpan = document.createElement("span");
+    titleParaSpan.textContent = "Moon Cafe";
+    titlePara.appendChild(titleParaSpan);
 
     // image
     const mainImage = document.createElement("img");
