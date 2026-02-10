@@ -1,4 +1,7 @@
 export default function contact() {
+    const mainDiv = document.createElement("div");
+    mainDiv.classList.add("contact-main-div");
+
     const contactDiv = document.createElement("div");
     contactDiv.classList.add("contact-div");
 
@@ -29,7 +32,9 @@ export default function contact() {
     ContentDiv.appendChild(emailP);
     ContentDiv.appendChild(workingHoursP);
 
-    contactDiv.appendChild(titleDiv);
     contactDiv.appendChild(ContentDiv);
-    return contactDiv;
+
+    mainDiv.appendChild(titleDiv)
+    mainDiv.appendChild(contactDiv);
+    return mainDiv;
 }

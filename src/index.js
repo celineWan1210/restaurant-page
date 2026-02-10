@@ -38,4 +38,3 @@ document.addEventListener("click", e => {
         currentPage = "home";
     }
 })
-
