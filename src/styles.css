@@ -20,13 +20,14 @@
     --background-color: #DAA06D;
     --secondary-background-color: #EADDCA;
     --darker-background-color: #834333;
+    --dark-font-color: #5A2424;
 
     /* font */
     --title-font: "Want Coffee";
     --title-font-size: clamp(3rem, 8vw, 8rem);
     --header-font-size: 32px;
     --smaller-title-font-size: clamp(3rem, 5vw, 6rem);
-    --desc-font-size: clamp(10px, 3vw, 32px);
+    --desc-font-size: clamp(10px, 3vw, 25px);
 
     /* border */
     --border-radius: 12px;
@@ -86,7 +87,7 @@
 
     font-family: var(--title-font);
     font-size: var(--title-font-size);
-    color: white;
+    color: var(--darker-background-color);
 }
 
 /* home page section */
@@ -120,7 +121,8 @@
     justify-self: start;
     color: white;
     font-size: var(--desc-font-size);
-    font-family: var(--title-font);
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* contact section */
@@ -155,4 +157,35 @@
     flex-direction: column;
     font-size: var(--desc-font-size);
     gap: 32px;
+}
+
+/* menu section */
+.menu-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 20px;
+    gap: 8px;
+}
+.card-section {
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    border: 2px solid var(--darker-background-color);
+}
+.card-section .menu-desc-div {
+    font-family: var(--title-font);
+    font-size: var(--desc-font-size);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--dark-font-color);
+    font-weight: 900;
+}
+.menu-div img{
+    max-width: 40%;
 }
