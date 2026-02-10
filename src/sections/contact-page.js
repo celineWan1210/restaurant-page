@@ -1,12 +1,33 @@
 export default function contact() {
     const contactDiv = document.createElement("div");
-    
-    const addressDiv = document.createElement("div");
-    const addressSpan = document.createElement("span");
-    addressSpan.textContent = "Address: 123 Brew Street, Georgetown, Penang, Malaysia";
-    addressDiv.appendChild(addressSpan);
+
+    // title div
+    const titleDiv = document.createElement("div");
+    const titleSpan = document.createElement("span");
+    titleSpan.textContent = "Contact & Hours";
+    titleDiv.appendChild(titleSpan);
+
+    // content div
+    const ContentDiv = document.createElement("div");
+    ContentDiv.classList.add("contact-content");
+
+    // content para
+    const addressP = document.createElement("p");
+    addressP.textContent = "Address: 123 Brew Street, Georgetown, Penang, Malaysia";
+    const telephoneP = document.createElement("p");
+    telephoneP.textContent = "Phone: +60 12-345 6789";
+    const emailP = document.createElement("p");
+    emailP.textContent = "Email: hello@mooncafemy.com";
+    const workingHoursP = document.createElement("p");
+    workingHoursP.textContent = "Working hours: Monday - Friday 10:00 AM - 9:00 PM"
 
 
-    contactDiv.appendChild(addressDiv);
+    ContentDiv.appendChild(addressP);
+    ContentDiv.appendChild(telephoneP);
+    ContentDiv.appendChild(emailP);
+    ContentDiv.appendChild(workingHoursP);
+
+    contactDiv.appendChild(titleDiv);
+    contactDiv.appendChild(ContentDiv);
     return contactDiv;
 }
