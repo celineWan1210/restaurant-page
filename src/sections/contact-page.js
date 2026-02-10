@@ -1,8 +1,10 @@
 export default function contact() {
     const contactDiv = document.createElement("div");
+    contactDiv.classList.add("contact-div");
 
     // title div
     const titleDiv = document.createElement("div");
+    titleDiv.classList.add("title-div")
     const titleSpan = document.createElement("span");
     titleSpan.textContent = "Contact & Hours";
     titleDiv.appendChild(titleSpan);

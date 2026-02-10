@@ -19,12 +19,14 @@
     /* color */
     --background-color: #DAA06D;
     --secondary-background-color: #EADDCA;
+    --darker-background-color: #834333;
 
     /* font */
     --title-font: "Want Coffee";
     --title-font-size: clamp(3rem, 8vw, 8rem);
     --header-font-size: 32px;
-    --desc-font-size: clamp(10px, 2vw, 24px);
+    --smaller-title-font-size: 48px;
+    --desc-font-size: clamp(10px, 3vw, 32px);
 
     /* border */
     --border-radius: 12px;
@@ -118,4 +120,30 @@
     color: white;
     font-size: var(--desc-font-size);
     font-family: var(--title-font);
+}
+
+/* contact section */
+.contact-div {
+    background-color: var(--darker-background-color);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin: 20px;
+    height: 50vh;
+    justify-content: center;
+    place-items: center;
+
+
+    font-family: var(--title-font);
+    color: var(--secondary-background-color);
+}
+.contact-div > .title-div {
+    font-size: var(--smaller-title-font-size);
+}
+.contact-div > .contact-content {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--desc-font-size);
+    gap: 32px;
 }
